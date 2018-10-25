@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 23 Paź 2018, 12:18
+-- Czas generowania: 25 Paź 2018, 08:20
 -- Wersja serwera: 10.1.19-MariaDB
 -- Wersja PHP: 5.6.28
 
@@ -122,6 +122,16 @@ CREATE TABLE `sale` (
   `maks_ilosc_osob` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `szkoly`
+--
+
+CREATE TABLE `szkoly` (
+  `szkola` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -175,6 +185,12 @@ ALTER TABLE `przedmioty`
 --
 ALTER TABLE `sale`
   ADD UNIQUE KEY `sala` (`sala`);
+
+--
+-- Indexes for table `szkoly`
+--
+ALTER TABLE `szkoly`
+  ADD PRIMARY KEY (`szkola`);
 
 --
 -- AUTO_INCREMENT for dumped tables
