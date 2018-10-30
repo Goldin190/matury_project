@@ -1,0 +1,22 @@
+.row{
+    height: 100vh;
+}
+.navbar,.navbar-nav{
+    height: 100%;
+}
+.navbar-item{
+    margin-top: 5vh;
+}
+.dropdown,.strech{
+    width: 100%;
+}
+.no-margin{
+    margin: 0;
+    padding: 0;
+}
+.flat{
+    border-radius: 0;
+}
+.dropdown-menu{
+    top: -10px;
+}
